@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Service Worker Tutorial | David Novicki</title>
+</head>
+
+<body>
+	<h1>Service workers rule!</h1>
+	<img src="https://placeimg.com/640/480/any">
+	<script type='application/javascript'>
+		if ('serviceWorker' in navigator) {
+			window.addEventListener('load', function () {
+				navigator.serviceWorker.register('/sw.js').then(function (registration) {
+					// Registration was successful
+					console.log('ServiceWorker registration successful with scope: ', registration.scope);
+				}, function (err) {
+					// registration failed :(
+					console.log('ServiceWorker registration failed: ', err);
+				});
+			});
+		}
+	</script>
+	<script>
+		fetch('https://jsonplaceholder.typicode.com/posts/1')
+			.then(response => response.json())
+			.then(json => console.log(json))
+	</script>
+</body>
+
+</html>

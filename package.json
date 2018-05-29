@@ -1,0 +1,25 @@
+{
+  "name": "service-worker-tutorial",
+  "version": "1.0.0",
+  "description": "A short tutorial outlining simple use cases of a service worker",
+  "main": "server.js",
+  "scripts": {
+	"test": "echo \"Error: no test specified\" && exit 1",
+	"build": "babel src -d dist",
+	"watch": "npm run build -- --watch",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "service-worker",
+    "worker",
+    "service"
+  ],
+  "author": "David Novicki",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0"
+  }
+}
