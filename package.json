@@ -12,10 +12,5 @@
   ],
   "author": "David Novicki <supercycle91@gmail.com>",
   "license": "ISC",
-  "dependencies": {
-    "express": "^4.16.2"
-  },
-  "devDependencies": {
-    "babel-cli": "^6.26.0"
-  }
+  "dependencies": {}
 }
