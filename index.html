@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>Service Worker Tutorial | David Novicki</title>
+	<title>Service Worker Demo | David Novicki</title>
 </head>
 
 <body>
@@ -15,6 +15,7 @@
 				navigator.serviceWorker.register('/sw.js').then(function (registration) {
 					// Registration was successful
 					console.log('ServiceWorker registration successful with scope: ', registration.scope);
+					window.swReg = registration;
 				}, function (err) {
 					// registration failed :(
 					console.log('ServiceWorker registration failed: ', err);

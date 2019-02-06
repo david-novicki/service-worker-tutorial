@@ -1,20 +1,16 @@
 {
   "name": "service-worker-tutorial",
   "version": "1.0.0",
-  "description": "A short tutorial outlining simple use cases of a service worker",
-  "main": "server.js",
+  "description": "A short tutorial outlining simple use lifecycles and events of a service worker",
   "scripts": {
-	"test": "echo \"Error: no test specified\" && exit 1",
-	"build": "babel src -d dist",
-	"watch": "npm run build -- --watch",
-    "start": "node server.js"
+    "start": "python -m SimpleHTTPServer 8080"
   },
   "keywords": [
     "service-worker",
     "worker",
     "service"
   ],
-  "author": "David Novicki",
+  "author": "David Novicki <supercycle91@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.2"
