@@ -10,7 +10,7 @@ Service Workers will NOT load under the following conditions:
 ### SimpleHTTPServer
 I currently use a quick python server to serve this site. Make sure you have [SimpleHTTPServer](https://docs.python.org/2/library/simplehttpserver.html) installed. 
 ```
-python -m SimpleHTTPServer 8080
+npm start
 ```
 
 Once running, visit http://localhost:8080 to load the site.
